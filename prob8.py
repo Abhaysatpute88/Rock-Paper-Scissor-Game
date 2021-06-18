@@ -15,13 +15,11 @@ def main():
                 list1=["rock","paper","scissor"]
                 computer=random.choice(list1)
             # This list for the user
-                list2=["rock","paper","scissor"]
-                a=int(input("enter the number:"))
-            # This condition is for ....when user input is wrong
-                if a>2:
-                    print("invalid input")
-                    break
-                b=list2[a]
+                a=2
+                while(a<0 or a>=2):
+                    a=int(input("enter number between 0 and 2:"))
+            # This condition is for ....when user input is wrong   
+                b=list1[a]
                 print(f"because of opponent character is {computer} and your character {b}")
                 if computer == b:
                     print("both the characters are same play again")
