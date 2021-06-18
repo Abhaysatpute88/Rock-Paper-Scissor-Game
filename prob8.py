@@ -16,7 +16,7 @@ def main():
                 computer=random.choice(list1)
             # This list for the user
                 a=2
-                while(a<0 or a>2):
+                while(a<0 or a>=2):
                     a=int(input("enter number between 0 and 2:"))
             # This condition is for ....when user input is wrong   
                 b=list1[a]
