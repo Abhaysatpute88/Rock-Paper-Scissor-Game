@@ -39,13 +39,17 @@ def main():
             print(f"opponent points are {p} opponent won the game......your points are {k}")
         else:
             print(f"your points {k} and opponent points {p} game is draw")
-
-        Repeat=input("want to play again press yes/no\n")
-        if Repeat=="yes" or Repeat=="YES" or Repeat=="Yes":
-            main()
-        else:
-            print("bye")
-            exit()
+        def main2():
+             Repeat=input("want to play again press yes/no\n")
+             if Repeat=="yes" or Repeat=="YES" or Repeat=="Yes":
+                 main()
+             elif Repeat=="no" or Repeat=="NO":
+                 print("bye")
+                 exit()
+             else:
+                 print("Invalid input")
+                 main2()
+        main2()
 main()
                 
 
